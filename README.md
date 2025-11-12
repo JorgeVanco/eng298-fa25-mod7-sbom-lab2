@@ -17,7 +17,7 @@ After completing this lab, you will be able to:
 4. Explain how patching operational environments supports *complete mediation* and *assurance* in the secure design lifecycle.
 
 ### **Terminology**
-**Packages** refer to the individual software components installed on your Ubuntu-based Codespace. A package is essentially a bundled unit of software, containing:
+<b><font color="FF5F05">Packages</font></b> refer to the individual software components installed on your Ubuntu-based Codespace. A package is essentially a bundled unit of software, containing:
 * The program or library files
 * Metadata (version number, description, dependencies)
 * Instructions for installing, configuring, and removing it
@@ -39,8 +39,22 @@ syft packages:apt
 ...you are examining all the packages your Codespace depends on to function.
 These packages form the software supply chain of your operating environment — and generating SBOMs, scanning for CVEs, and applying updates allow you to evaluate and improve its security posture.
 
-**apt**
-x
+<b><font color="FF5F05">apt</font></b>, short for **Advanced Package Tool**, is the package management system used by Ubuntu and other Debian-based Linux distributions. It is responsible for:
+* Installing new software
+* Updating existing software
+* Removing software
+* Downloading and applying security patches
+* Managing dependencies between packages
+
+In this lab, you use `apt` to:
+* Refresh the system’s package index (`sudo apt update`)
+* View which packages can be upgraded (`sudo apt list --upgradable`)
+* Apply updates and security patches (`sudo apt upgrade -y`)
+
+These actions are essential for:
+* Maintaining system integrity
+* Ensuring outdated or vulnerable software is replaced
+* Supporting continuous verification and assurance (key Module 7 concepts)
 
 ### **Environment Setup**
 All commands can be executed directly inside your GitHub Codespace using this repo.  
@@ -75,8 +89,8 @@ grype sbom:../deliverables/system_sbom_before.json -o table > ../deliverables/sy
 ``` 
 
 3. Review and record:
-- Total number of packages detected
-- Number of vulnerabilities by severity (Critical, High, Medium, Low)
+* Total number of packages detected
+* Number of vulnerabilities by severity (Critical, High, Medium, Low)
 
 #### **Part 3 – Identify and Apply System Updates**
 1. Update the package database:
