@@ -96,7 +96,7 @@ syft scan dir:/ -o spdx-json > deliverables/system_sbom_before.json
 2. Use Grype to scan the SBOM for known vulnerabilities:
 
 ```bash
-grype sbom:../deliverables/system_sbom_before.json -o table > deliverables/system_vulns_before.txt
+grype sbom:deliverables/system_sbom_before.json -o table > deliverables/system_vulns_before.txt
 ``` 
 
 3. Review and record:
