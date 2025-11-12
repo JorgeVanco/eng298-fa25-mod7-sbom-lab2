@@ -182,7 +182,7 @@ deliverables/
 
 **Canvas Submission**:
 
-1. Copy your forked repository URL: Go to your forked repo on GitHub (it should look something like:
+1. Copy your forked repository URL: Go to your forked repo on GitHub (it should look something like):
    
      `https://github.com/<your-username>/eng298-fa25-mod7-sbom-lab2`
    
