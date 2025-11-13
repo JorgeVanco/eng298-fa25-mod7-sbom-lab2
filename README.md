@@ -89,7 +89,7 @@ syft scan dir:/ -o spdx-json > deliverables/system_sbom_before.json
 
 | **Syntax Breakdown** | **Description**
 |---------------|------------------------|
-| **syft** | Program used to create an SBOM in an .spdx format
+| **syft** | Program used to create an SBOM
 | **scan** | Program sub-command used to *scan* the Codespace’s Ubuntu filesystem for installed packages
 | **dir:/** | The directory to be scanned; in this case, root filesystem (/)
 | **-o spdx-json** | Output (*-o*) the results in an *SPDX JSON* format
