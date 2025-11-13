@@ -141,7 +141,7 @@ Put together, this command line says, *"With admin privileges, show me all packa
    
 3. If packages are listed, choose at least three (3), record their current and target versions in the `reflection.md` file and continue with the next step (4. Apply system updates).
 
-   **NOTE**: If no packages are listed (only `“Listing… Done”`), record that your system is already fully up-to-date in the `reflection.md` file and jump to Part 4: Post-Update Analysis.
+   **NOTE**: If no packages are listed (only `“Listing… Done”`), record that your system is already fully up-to-date in the `reflection.md` file and jump to Part 4 - Post-Update Analysis.
    
 5. Apply system updates:
 
