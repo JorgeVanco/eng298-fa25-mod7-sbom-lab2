@@ -79,7 +79,7 @@ Before generating SBOMs, collect information about the current Ubuntu system in 
 | **dpkg** | package manager for Debian
 | **-l** | Program option (*-l*) used to list packages matching given pattern
 | **>** | Re-direct output to the next line
-| ** deliverables/before_patch.txt** | in the deliverable folder in a file named before_patch.txt
+| **deliverables/before_patch.txt** | in the deliverable folder in a file named before_patch.txt
 
 #### **Part 2 – Generate Baseline SBOM and Vulnerability Report**
 1. Use Syft to create a system-level SBOM of APT-managed packages (**NOTE**: This scan will take approximately 3 minutes to complete):
